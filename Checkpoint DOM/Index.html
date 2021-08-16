@@ -127,47 +127,48 @@
                 <tr id="se" class="hiden" >
                     <td class="Item">iPhone SE</td>
                     <td class="Item's price">1999,00</td>
-                    <td class="Quantity"><input onchange="update(Tootal)" min="0" max="10" type="number" value="0" id="Qty-se" style="width: 30%;"></td>
+                    <td class="Quantity"><input onchange="update(Tootal)" min="1" max="10" type="number" value="0" id="Qty-se" style="width: 30%;"></td>
                     <td><i onclick="removeFromCart(document.getElementById('se'))" class="fas fa-minus-circle"></i></td>
                 </tr>
                 <!-- iPhone 8 Plus -->
                 <tr id="VIII-plus" class="hiden">
                     <td class="Item">iPhone 8 Plus</td>
                     <td class="Item's price">2299,00</td>
-                    <td class="Quantity"><input onchange="update(Tootal)" max="10" min="0" type="number" value="0" id="Qty-VIII-plus" style="width: 30%;"></td>
+                    <td class="Quantity"><input onchange="update(Tootal)" max="10" min="1" type="number" value="0" id="Qty-VIII-plus" style="width: 30%;"></td>
                     <td><i onclick="removeFromCart(document.getElementById('VIII-plus'))" class="fas fa-minus-circle"></i></td>
                 </tr>
                 <!-- iPhone 11 -->
                 <tr id="XI" class="hiden">
                     <td class="Item">iPhone 11</td>
                     <td class="Item's price">2999,00</td>
-                    <td class="Quantity"><input onchange="update(Tootal)" min="0" max="10" type="number" value="0" id="Qty-XI" style="width: 30%;"></td>
+                    <td class="Quantity"><input onchange="update(Tootal)" min="1" max="10" type="number" value="0" id="Qty-XI" style="width: 30%;"></td>
                     <td><i onclick="removeFromCart(document.getElementById('XI'))" class="fas fa-minus-circle"></i></td>
                 </tr>
                 <!-- iPhone 11 Pro -->
                 <tr id="XI-pro" class="hiden">
                     <td class="Item">iPhone 11 Pro</td>
                     <td class="Item's price">4199,00</td>
-                    <td class="Quantity"><input onchange="update(Tootal)" min="0" max="10" type="number" value="0" id="Qty-XI-pro" style="width: 30%;"></td>
+                    <td class="Quantity"><input onchange="update(Tootal)" min="1" max="10" type="number" value="0" id="Qty-XI-pro" style="width: 30%;"></td>
                     <td><i onclick="removeFromCart(document.getElementById('XI-pro'))" class="fas fa-minus-circle"></i></td>
                 </tr>
                 <!-- iPhone 12 -->
                 <tr id="XII" class="hiden">
                     <td class="Item">iPhone 12</td>
                     <td class="Item's price">3599,00</td>
-                    <td class="Quantity"><input onchange="update(Tootal)" min="0" max="10" type="number" value="0" id="Qty-XII" style="width: 30%;"></td>
+                    <td class="Quantity"><input onchange="update(Tootal)" min="1" max="10" type="number" value="0" id="Qty-XII" style="width: 30%;"></td>
                     <td><i onclick="removeFromCart(document.getElementById('XII'))" class="fas fa-minus-circle"></i></td>
                 </tr>
                 <!-- iPhone 12 Pro -->
                 <tr id="XII-pro" class="hiden">
                     <td class="Item">iPhone 12 Pro</td>
                     <td class="Item's price">4999,00 </td>
-                    <td class="Quantity"><input onchange="update(Tootal)" min="0" max="10" type="number" value="0" id="Qty-XII-pro" style="width: 30%;"></td>
+                    <td class="Quantity"><input onchange="update(Tootal)" min="1" max="10" type="number" value="0" id="Qty-XII-pro" style="width: 30%;"></td>
                     <td><i onclick="removeFromCart(document.getElementById('XII-pro'))" class="fas fa-minus-circle"></i></td>
                 </tr>
             </table>
             <!-- Total -->
-            <div class="total"><span>Total: </span><span id="Total">0</span><span> TND</span></div>
+            <span class="total"><span>Total: </span><span id="Total">0</span><span> TND</span></span>
+            <span onclick="purchase()" class="Confirm-btn">Purchase</sapn>
         </section>
     </main>
     <script src="Js/main.js" async></script>

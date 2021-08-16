@@ -85,6 +85,14 @@ td i:hover{
     display: none;
 }
 .total{
+    margin-top: 25px;
+}
+.Confirm-btn{
     float: right;
+    padding: 2.5%;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 1rem;
 }
   
