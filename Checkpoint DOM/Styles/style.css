@@ -1,0 +1,90 @@
+ body{
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+ }
+ header{
+    text-align: center;
+    font-weight: medium;
+    border-bottom: solid;
+ }
+ header h1{
+     padding: 20px;
+ }  
+ main{
+     display: flex;
+ }
+ /* section 1's style */
+ .shop-items{
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    border-right: solid;
+ }
+ .item{
+     padding: 1%;
+     margin: 2.5%;
+ }
+ .item:hover{
+     border: solid gainsboro;
+     border-radius: 20px;
+ }
+
+ .prod-img img{
+     width: 60%;
+     height: auto;
+ }
+ .prod-name, .prod-price, .buttons{
+     margin: 2% 0% 3% 0%;
+ }
+ .buttons{
+     display: flex;
+     justify-content:space-around;
+     align-items: center;
+ }
+ /* button's style */
+ .add-btn{
+     padding: 3.5%;
+     color: white;
+     background-color: black;
+     border: none;
+     border-radius: 1rem;
+ }
+ .add-btn:hover{
+     background-color: gainsboro;
+     color: black;
+ }
+/* heart's style */
+.far{
+    font-size: 22px;
+}
+
+div>.fas, .far:hover{
+    color: red;
+    font-size: 22px;
+}
+/* section 2's style */
+.shopping-cart{
+    padding: 1em;
+    width: 40%;
+}
+h2{
+    text-align: center;
+}
+table{
+    width: 100%;
+    border: 12px black;
+    text-align: center;
+    border-bottom: solid;
+}
+td i:hover{
+    color: red;
+}
+.hiden{
+    display: none;
+}
+.total{
+    float: right;
+}
+  

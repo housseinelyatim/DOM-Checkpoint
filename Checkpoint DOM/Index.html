@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/a/ab/Apple-logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/1b5c00d7b0.js" crossorigin="anonymous"></script>
+    <title>iStore</title>
+</head>
+<body>
+    
+    <header>
+        <!-- Website name -->
+        <h1>iStore</h1>
+    </header>
+    <main>
+        
+        <!-- Shop items -->
+        <section class="shop-items">
+            <!-- iPhone SE -->
+            <div class="item">
+                <!-- product's image -->
+                <div class="prod-img"><img src="https://www.istore.com.tn/221-home_default/iphone-se.jpg" alt="iphone-se"></div>
+                <!-- Product's name -->
+                <div class="prod-name">iPhone SE</div>
+                <!-- Product's price -->
+                <div class="prod-price">1 999,00 TND</div>
+                <div class="buttons">
+                    <!-- heart -->
+                    <i onclick="like(document.getElementById('heart1'))" id="heart1" class="far fa-heart"></i>                   
+                    <!-- Add to cart button -->
+                    <button onclick="addToCart(document.getElementById('se'))" class="add-btn"><i class="fas fa-shopping-cart" ></i> Add To cart</button>
+                </div>
+            </div>
+            <!-- iPhone 8 Plus -->
+            <div class="item">
+                <!-- product's image -->
+                <div class="prod-img"><img src="https://www.istore.com.tn/203-home_default/iphone-8-plus-128-gb.jpg" alt="iphone-8-plus"></div>
+                <!-- Product's name -->
+                <div class="prod-name">iPhone 8 Plus</div>
+                <!-- Product's price -->
+                <div class="prod-price">2 299,00 TND</div>
+                <div class="buttons">
+                    <!-- heart -->
+                    <i onclick="like(document.getElementById('heart2'))" id="heart2" class="far fa-heart"></i>
+                    <!-- Add to cart button -->
+                    <button onclick="addToCart(document.getElementById('VIII-plus'))" class="add-btn"><i class="fas fa-shopping-cart"></i> Add To cart</button>
+                </div>
+            </div>
+            <!-- iPhone 11 -->
+            <div class="item">
+                <!-- product's image -->
+                <div class="prod-img"><img src="https://www.istore.com.tn/205-home_default/iphone-11.jpg" alt="iphone-11"></div>
+                <!-- Product's name -->
+                <div class="prod-name">iPhone 11</div>
+                <!-- Product's price -->
+                <div class="prod-price">2 999,00 TND</div>
+                <div class="buttons">
+                    <!-- heart -->
+                    <i onclick="like(document.getElementById('heart3'))" id="heart3" class="far fa-heart"></i>
+                    <!-- Add to cart button -->
+                    <button onclick="addToCart(document.getElementById('XI'))" class="add-btn"><i class="fas fa-shopping-cart"></i> Add To cart</button>
+                </div>
+            </div>
+            <!-- iPhone 11 Pro -->
+            <div class="item">
+                <!-- product's image -->
+                <div class="prod-img"><img src="https://www.istore.com.tn/216-home_default/iphone-11-pro.jpg" alt="iphone-11-pro"></div>
+                <!-- Product's name -->
+                <div class="prod-name">iPhone 11 Pro</div>
+                <!-- Product's price -->
+                <div class="prod-price">4 199,00 TND</div>
+                <div class="buttons">
+                    <!-- heart -->
+                    <i onclick="like(document.getElementById('heart4'))" id="heart4" class="far fa-heart"></i>
+                    <!-- Add to cart button -->
+                    <button onclick="addToCart(document.getElementById('XI-pro'))" class="add-btn"><i class="fas fa-shopping-cart"></i> Add To cart</button>
+                </div>
+            </div>
+            <!-- iPhone 12 -->
+            <div class="item">
+                <!-- product's image -->
+                <div class="prod-img"><img src="https://www.istore.com.tn/1463-home_default/iphone-12-64-256.jpg" alt="iphone-12"></div>
+                <!-- Product's name -->
+                <div class="prod-name">iPhone 12</div>
+                <!-- Product's price -->
+                <div class="prod-price">3 599,00 TND</div>
+                <div class="buttons">
+                    <!-- heart -->
+                    <i onclick="like(document.getElementById('heart5'))" id="heart5" class="far fa-heart"></i>
+                    <!-- Add to cart button -->
+                    <button onclick="addToCart(document.getElementById('XII'))" class="add-btn"><i class="fas fa-shopping-cart"></i> Add To cart</button>
+                </div>
+            </div>
+            <!-- iPhone 12 Pro -->
+            <div class="item">
+                <!-- product's image -->
+                <div class="prod-img"><img src="https://www.istore.com.tn/1550-home_default/Array.jpg" alt="iphone-12-pro"></div>
+                <!-- Product's name -->
+                <div class="prod-name">iPhone 12 Pro</div>
+                <!-- Product's price -->
+                <div class="prod-price">4 999,00 TND</div>
+                <div class="buttons">
+                    <!-- heart -->
+                    <i onclick="like(document.getElementById('heart6'))" id="heart6" class="far fa-heart"></i>
+                    <!-- Add to cart button -->
+                    <button onclick="addToCart(document.getElementById('XII-pro'))" class="add-btn"><i class="fas fa-shopping-cart"></i> Add To cart</button>
+                </div>
+            </div>
+        </section>
+        <!-- Shopping cart -->
+        <section class="shopping-cart">
+            <h2>Cart</h2>
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Item's price</th>
+                    <th>Quantity</th>
+                    <th><i class="fas fa-minus-circle"></i></th>
+                </tr>
+                <!-- iPhone SE -->
+                <tr id="se" class="hiden" >
+                    <td class="Item">iPhone SE</td>
+                    <td class="Item's price">1999,00</td>
+                    <td class="Quantity"><input min="0" max="10" type="number" value="1" id="Qty-se" style="width: 30%;"></td>
+                    <td><i onclick="removeFromCart(document.getElementById('se'))" class="fas fa-minus-circle"></i></td>
+                </tr>
+                <!-- iPhone 8 Plus -->
+                <tr id="VIII-plus" class="hiden">
+                    <td class="Item">iPhone 8 Plus</td>
+                    <td class="Item's price">2299,00</td>
+                    <td class="Quantity"><input max="10" min="0" type="number" value="1" id="Qty-VIII-plus" style="width: 30%;"></td>
+                    <td><i onclick="removeFromCart(document.getElementById('VIII-plus'))" class="fas fa-minus-circle"></i></td>
+                </tr>
+                <!-- iPhone 11 -->
+                <tr id="XI" class="hiden">
+                    <td class="Item">iPhone 11</td>
+                    <td class="Item's price">2999,00</td>
+                    <td class="Quantity"><input min="0" max="10" type="number" value="1" id="Qty-XI" style="width: 30%;"></td>
+                    <td><i onclick="removeFromCart(document.getElementById('XI'))" class="fas fa-minus-circle"></i></td>
+                </tr>
+                <!-- iPhone 11 Pro -->
+                <tr id="XI-pro" class="hiden">
+                    <td class="Item">iPhone 11 Pro</td>
+                    <td class="Item's price">4199,00</td>
+                    <td class="Quantity"><input min="0" max="10" type="number" value="1" id="Qty-XI-pro" style="width: 30%;"></td>
+                    <td><i onclick="removeFromCart(document.getElementById('XI-pro'))" class="fas fa-minus-circle"></i></td>
+                </tr>
+                <!-- iPhone 12 -->
+                <tr id="XII" class="hiden">
+                    <td class="Item">iPhone 12</td>
+                    <td class="Item's price">3599,00</td>
+                    <td class="Quantity"><input min="0" max="10" type="number" value="1" id="Qty-XII" style="width: 30%;"></td>
+                    <td><i onclick="removeFromCart(document.getElementById('XII'))" class="fas fa-minus-circle"></i></td>
+                </tr>
+                <!-- iPhone 12 Pro -->
+                <tr id="XII-pro" class="hiden">
+                    <td class="Item">iPhone 12 Pro</td>
+                    <td class="Item's price">4999,00 </td>
+                    <td class="Quantity"><input min="0" max="10" type="number" value="1" id="Qty-XII-pro" style="width: 30%;"></td>
+                    <td><i onclick="removeFromCart(document.getElementById('XII-pro'))" class="fas fa-minus-circle"></i></td>
+                </tr>
+            </table>
+            <!-- Total -->
+            <div class="total"><span>Total: </span><span id="Total">0</span><span> TND</span></div>
+        </section>
+    </main>
+    <script src="Js/main.js" async></script>
+
+</body>
+</html>
